@@ -4,17 +4,17 @@ let router = express.Router();
 let mongoose = require('mongoose');
 
 //reference to the db schema
-let myFavourit = require('../models/favourits');
+let favourit = require('../models/favourits');
 
 /** GET myFavourit list page -READ operations */
 router.get('/', (req, res, next)=>{
-    myFavourit.find((err, favouriteList)=>{
+    favourit.find((err, favouriteList)=>{
 
         if(err){
             return console.error(err);
         }
         else{
-           //console.log(favouriteList);
+            console.log(favouriteList);
             res.render('favourit/index', {
                 title: 'Favourit List',
                 favouriteList: favouriteList

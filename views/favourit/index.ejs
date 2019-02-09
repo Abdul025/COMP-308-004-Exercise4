@@ -11,17 +11,17 @@
                 <tr>
                     <th class="text-center">First Name</th>
                     <th class="text-center">Last Name</th>
-                    <th class="text-center">Favourite Color</th>
-                    <th class="text-center">Favourite Fruit</th>
+                    <th class="text-center">Favourit Color</th>
+                    <th class="text-center">Favourit Fruit</th>
                 </tr>
 
                 <!-- Repeatable Template Row -->
                 <% for(let count = 0; count < favouriteList.length; count++) { %>
                     <tr>
-                        <td class="text-center"><%= favouriteList[count].FirstName %></td>
-                        <td class="text-center"><%= favouriteList[count].LastName %></td>
-                        <td class="text-center"><%= favouriteList[count].FavouritColor %></td>
-                        <td class="text-center"><%= favouriteList[count].FavouritFruit %></td>
+                        <td class="text-center"><%= favouriteList[count].firstName %></td>
+                        <td class="text-center"><%= favouriteList[count].lastname %></td>
+                        <td class="text-center"><%= favouriteList[count].favouritColor %></td>
+                        <td class="text-center"><%= favouriteList[count].favouritFruit %></td>
                     </tr>
                 <% } %>
             </table>
